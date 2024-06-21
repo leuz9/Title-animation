@@ -16,20 +16,20 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-function reveal_vincent() {
-  var reveal_vincents = document.querySelectorAll(".reveal_vincent");
+function reveal_late() {
+  var reveal_lates = document.querySelectorAll(".reveal_late");
 
-  for (var i = 0; i < reveal_vincents.length; i++) {
+  for (var i = 0; i < reveal_lates.length; i++) {
     var windowHeight = window.innerHeight;
-    var elementTop = reveal_vincents[i].getBoundingClientRect().top;
+    var elementTop = reveal_lates[i].getBoundingClientRect().top;
     var elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveal_vincents[i].classList.add("active");
+      reveal_lates[i].classList.add("active");
     } else {
-      reveal_vincents[i].classList.remove("active");
+      reveal_lates[i].classList.remove("active");
     }
   }
 }
 
-window.addEventListener("scroll", reveal_vincent);
+window.addEventListener("scroll", reveal_late);
